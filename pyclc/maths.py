@@ -175,3 +175,15 @@ class Math:
             int | float: The power series
         """
         return sum([x ** i for i in range(n + 1)])
+    
+    def derivative(self, data: List[Union[int, float]]) -> List[Union[int, float]]:
+        """
+        This method calculates the derivative
+
+        Args:
+            data (List[Union[int, float]]): The list of data
+
+        Returns:
+            List[Union[int, float]]: The derivative
+        """
+        return [i * data.index(i) for i in data]
