@@ -17,6 +17,7 @@ from .maths import Math
 from .geometry import Geometry
 from .physics import Physics
 from .astrology import Astrology
+from .__main__ import App
 
 __title__ = "pyclc"
 __version__ = "0.0.1"
