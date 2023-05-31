@@ -103,35 +103,47 @@ class Astrology:
         """
         return 23.4393 - 3.563E-7 * year
     
-    def julian_day(self, year: Union[int, float], month: Union[int, float], day: Union[int, float]) -> float:
+    def julian_day(self, year: int, month: int, day: int) -> float:
         """
         Calculate julian day using year, month and day
 
         Args:
-            year (Union[int, float]): Year
-            month (Union[int, float]): Month
-            day (Union[int, float]): Day
+            year (int): Year
+            month (int): Month
+            day (int): Day
         
         Returns:
-            Union[int, float]: Julian day
+            float: Julian day
         """
         year = year + 4800 - (14 - month) // 12
         month = month + 12 * ((14 - month) // 12) - 3
         return day + ((153 * month + 2) // 5) + 365 * year + (year // 4) - (year // 100) + (year // 400) - 32045
     
-    def julian_date(self, year: Union[int, float], month: Union[int, float], day: Union[int, float]) -> float:
+    def julian_hour(self, hour: Union[int, float]) -> float:
+        """
+        Calculate julian hour using hour
+
+        Args:
+            hour (int): Hour
+        
+        Returns:
+            float: Julian hour
+        """
+        return hour - 12
+
+    def julian_date(self, year: int, month: int, day: int) -> float:
         """
         Calculate julian date using year, month and day
 
         Args:
-            year (Union[int, float]): Year
-            month (Union[int, float]): Month
-            day (Union[int, float]): Day
+            year (int): Year
+            month (int): Month
+            day (int): Day
         
         Returns:
-            Union[int, float]: Julian date
+            float: Julian date
         """
-        hour = 12
+        hour = 16
         return self.julian_day(year, month, day) + (self.julian_hour(hour) / 24)
     
     def orbital_period(self, mass: Union[int, float], radius: Union[int, float]) -> float:
