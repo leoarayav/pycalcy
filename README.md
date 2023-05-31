@@ -1,25 +1,44 @@
-# pyclc
-A smooth, lightweight and beautiful library for global calculation and more
+# pycalcy 🧮
+A smooth, lightweight and beautiful library for calculation and more
 
 ```bash
-pip install pyclc
+pip install pycalcy
 ```
 
-## Features
-Pycalculation contains the following available modules:
+## Features 📋
+pycalcy contains the following available modules:
 - Math
 - Physics
 - Geometry
-- **General** (which contains overall functions and calculations used)
+- Astrology
+- **Crypt** `NEW`
+- General (random calculations)
 
-## Usage
+## Usage 📖
+1. After installing the library, import it in your project like this
 ```python
-from pyclc import Math
-
-math = Math()
-
-print(math.permutation(5, 2))
+import pycalcy
 ```
 
-## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+2. Now you can use the library like this
+```python
+from pyacalcy import Geometry, App
+
+# Lets create a new geometry object
+geometry = Geometry()
+
+# And main app object
+pycalcy = App()
+
+# Now we can use it like this to calculate something
+volume = pycalcy(geometry.volume, 6, 7)
+
+# Now printing the result
+print(volume)
+```
+
+## Contributing 🤝
+- [Contribute](/pulls) If you want to contribute to this project you can fork this repository 
+and make a pull request following the pull request template format
+
+- [Issues](/issues) If you find a bug or want to request a new feature you can create an issue
