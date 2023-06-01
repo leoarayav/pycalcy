@@ -16,7 +16,7 @@ from .astrology import Astrology
 from .crypt import Encrypt
 from .__main__ import App
 
-__title__ = "pyclc"
+__title__ = "pycalcy"
 __version__ = "0.0.1"
 __author__ = "Leo Araya"
 __all__ = ['General', 'Math', 'Geometry', 'Physics', 'Astrology', 'Encrypt']

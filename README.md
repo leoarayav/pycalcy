@@ -1,11 +1,11 @@
-# pycalcy 🧮
+# pycalcy
 A smooth, lightweight and beautiful library for calculation and more
 
 ```bash
 pip install pycalcy
 ```
 
-## Features 📋
+## Features
 pycalcy contains the following available modules:
 - Math
 - Physics
@@ -14,7 +14,7 @@ pycalcy contains the following available modules:
 - **Crypt** `NEW`
 - General (random calculations)
 
-## Usage 📖
+## Usage
 1. After installing the library, import it in your project like this
 ```python
 import pycalcy
@@ -37,7 +37,7 @@ volume = pycalcy(geometry.volume, 6, 7)
 print(volume)
 ```
 
-## Contributing 🤝
+## Contributing
 - [Contribute](/pulls) If you want to contribute to this project you can fork this repository 
 and make a pull request following the pull request template format
 
