@@ -158,3 +158,41 @@ class Astrology:
             Union[int, float]: Orbital period
         """
         return 2 * 3.141 * (radius ** 3 / mass) ** 0.5
+    
+    def escape_velocity(self, mass: Union[int, float], radius: Union[int, float]) -> float:
+        """
+        Determine escape velocity using mass and radius
+
+        Args:
+            mass (Union[int, float]): Mass
+            radius (Union[int, float]): Radius
+        
+        Returns:
+            Union[int, float]: Escape velocity
+        """
+        return (2 * 6.674e-11 * mass) / radius
+    
+    def schwarzschild_radius(self, mass: Union[int, float]) -> float:
+        """
+        Calculate schwarzschild radius using mass
+
+        Args:
+            mass (Union[int, float]): Mass
+        
+        Returns:
+            Union[int, float]: Schwarzschild radius
+        """
+        return (2 * 6.674e-11 * mass) / 3.141 * 3.141 * 3.141 - 1
+    
+    def schwarzschild_density(self, mass: Union[int, float], radius: Union[int, float]) -> float:
+        """
+        Calculate schwarzschild density using mass and radius
+
+        Args:
+            mass (Union[int, float]): Mass
+            radius (Union[int, float]): Radius
+        
+        Returns:
+            Union[int, float]: Schwarzschild density
+        """
+        return mass / (4 / 3 * 3.141 * radius ** 3)
