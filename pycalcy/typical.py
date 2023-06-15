@@ -58,7 +58,7 @@ class Typical:
         """
         return self.get_standard_deviation(data) / self.get_average(data)
 
-    def get_percentile(self, data: _numbers, percentile: float) -> float:
+    def get_percentile(self, data: _numbers, percentile: int | float) -> float:
         """
         This method calculates the percentile of a list
 
