@@ -8,7 +8,7 @@
         Leo Araya (https://www.github.com/leoarayav)
 '''
 
-from .general import General
+from .typical import Typical
 from .maths import Math
 from .geometry import Geometry
 from .physics import Physics
@@ -19,4 +19,4 @@ from .__main__ import App
 __title__ = "pycalcy"
 __version__ = "0.0.1"
 __author__ = "Leo Araya"
-__all__ = ['General', 'Math', 'Geometry', 'Physics', 'Astrology', 'Encrypt']
+__all__ = ['Typical', 'Math', 'Geometry', 'Physics', 'Astrology', 'Encrypt']

@@ -7,7 +7,7 @@ from pycalcy import (
     App,
     Geometry,
     Math,
-    General,
+    Typical,
     Physics,
     Astrology,
     Encrypt
@@ -18,7 +18,7 @@ pycalcy = App()
 
 geometry = Geometry()
 math = Math()
-general = General()
+typical = Typical()
 physics = Physics()
 astrology = Astrology()
 crypt = Encrypt()
@@ -44,5 +44,5 @@ dsty = pycalcy(physics.density, 6, 7)
 print(dsty)
 
 '''This is a simple example of how to determinate the IMC of a person'''
-val = pycalcy(general.imc, 75, 1.70)
+val = pycalcy(typical.imc, 75, 1.70)
 print(val)
