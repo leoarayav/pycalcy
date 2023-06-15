@@ -46,7 +46,7 @@ class Typical:
         """
         return self.get_variance(data) ** 0.5
 
-    def get_coefficient_of_variation(self, data: _numbers):
+    def get_coefficient_of_variation(self, data: _numbers) -> float | int:
         """
         This method calculates the coefficient of variation of a list
 
