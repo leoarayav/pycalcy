@@ -6,7 +6,7 @@ from typing import List, Tuple
 
 _numbers = List[int]
 
-class General:
+class Typical:
     """The Global class who contains overall methods calculations"""
 
     def get_average(self, data: _numbers) -> float:
