@@ -1,5 +1,6 @@
 # pycalcy
 A smooth, lightweight and beautiful library for calculation and more
+> Nowadays this project is being written and rewritten.
 
 ```bash
 pip install pycalcy
@@ -7,12 +8,12 @@ pip install pycalcy
 
 ## Features
 pycalcy contains the following available modules:
-- Math
+- Maths
 - Physics
 - Geometry
 - Astrology
-- **Crypt** `NEW`
-- General (random calculations)
+- Crypt
+- Typical (Global calcs)
 
 ## Usage
 1. After installing the library, import it in your project like this
