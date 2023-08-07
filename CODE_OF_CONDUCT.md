@@ -1,4 +1,4 @@
-# Py-CLC - Contributor Covenant Code of Conduct
+# pycalcy - Contributor Covenant Code of Conduct
 
 ## Our Pledge
 
