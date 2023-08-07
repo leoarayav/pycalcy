@@ -187,3 +187,188 @@ class Math:
             List[Union[int, float]]: The derivative
         """
         return [i * data.index(i) for i in data]
+
+    def integral(self, data: List[Union[int, float]]) -> List[Union[int, float]]:
+        """
+        This method calculates the integral
+
+        Args:
+            data (List[Union[int, float]]): The list of data
+
+        Returns:
+            List[Union[int, float]]: The integral
+        """
+        return [i / (data.index(i) + 1) for i in data]
+    
+    def exponential(self, x: int | float) -> int | float:
+        """
+        This method calculates the exponential
+
+        Args:
+            x (int | float): The x
+
+        Returns:
+            int | float: The exponential
+        """
+        return sum([x ** i / self.factorial(i) for i in range(100)])
+
+    def logarithm(self, x: int | float) -> int | float:
+        """
+        This method calculates the logarithm
+
+        Args:
+            x (int | float): The x
+
+        Returns:
+            int | float: The logarithm
+        """
+        return sum([((-1) ** (i + 1)) * (x - 1) ** i / i for i in range(1, 100)])
+
+    def sine(self, x: int | float) -> int | float:
+        """
+        This method calculates the sine
+
+        Args:
+            x (int | float): The x
+
+        Returns:
+            int | float: The sine
+        """
+        return sum([((-1) ** i) * (x ** (2 * i + 1)) / self.factorial(2 * i + 1) for i in range(100)])
+    
+    def cosine(self, x: int | float) -> int | float:
+        """
+        This method calculates the cosine
+
+        Args:
+            x (int | float): The x
+
+        Returns:
+            int | float: The cosine
+        """
+        return sum([((-1) ** i) * (x ** (2 * i)) / self.factorial(2 * i) for i in range(100)])
+    
+    def tangent(self, x: int | float) -> int | float:
+        """
+        This method calculates the tangent
+
+        Args:
+            x (int | float): The x
+
+        Returns:
+            int | float: The tangent
+        """
+        return self.sine(x) / self.cosine(x)
+    
+    def secant(self, x: int | float) -> int | float:
+        """
+        This method calculates the secant
+
+        Args:
+            x (int | float): The x
+
+        Returns:
+            int | float: The secant
+        """
+        return 1 / self.cosine(x)
+    
+    def cosecant(self, x: int | float) -> int | float:
+        """
+        This method calculates the cosecant
+
+        Args:
+            x (int | float): The x
+
+        Returns:
+            int | float: The cosecant
+        """
+        return 1 / self.sine(x)
+    
+    def cotangent(self, x: int | float) -> int | float:
+        """
+        This method calculates the cotangent
+
+        Args:
+            x (int | float): The x
+
+        Returns:
+            int | float: The cotangent
+        """
+        return 1 / self.tangent(x)
+    
+    def hyperbolic_sine(self, x: int | float) -> int | float:
+        """
+        This method calculates the hyperbolic sine
+
+        Args:
+            x (int | float): The x
+
+        Returns:
+            int | float: The hyperbolic sine
+        """
+        return sum([(x ** (2 * i + 1)) / self.factorial(2 * i + 1) for i in range(100)])
+    
+    def complex_number(self, real: int | float, imaginary: int | float) -> complex:
+        """
+        This method calculates the complex number
+
+        Args:
+            real (int | float): The real
+            imaginary (int | float): The imaginary
+
+        Returns:
+            complex: The complex number
+        """
+        return complex(real, imaginary)
+
+    def complex_addition(self, data: List[complex]) -> complex:
+        """
+        This method calculates the complex addition
+
+        Args:
+            data (List[complex]): The list of complex
+
+        Returns:
+            complex: The complex addition
+        """
+        return sum(data)
+    
+    def complex_binomic_form(self, data: List[complex]) -> List[complex]:
+        """
+        This method calculates the complex binomic form
+
+        Args:
+            data (List[complex]): The list of complex
+
+        Returns:
+            List[complex]: The complex binomic form
+        """
+        return [
+            complex(i.real * self.cosine(i.imag), i.real * self.sine(i.imag)) for i in data
+        ]
+
+    def complex_polar_form(self, data: List[complex]) -> List[complex]:
+        """
+        This method calculates the complex polar form
+
+        Args:
+            data (List[complex]): The list of complex
+
+        Returns:
+            List[complex]: The complex polar form
+        """
+        return [
+            complex(self.hypotenuse(i.real, i.imag), self.tangent(i.imag / i.real)) for i in data
+        ]
+    
+    def euler(self, x: int | float) -> complex:
+        """
+        This method calculates the euler formula
+
+        Args:
+            x (int | float): The x
+
+        Returns:
+            complex: The euler formula
+        """
+        return complex(self.cosine(x), self.sine(x))
