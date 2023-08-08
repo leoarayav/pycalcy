@@ -11,7 +11,7 @@ pycalcy contains the following available modules:
 - Maths
 - Physics
 - Geometry
-- Astrology
+- Astronomy
 - Crypt
 - Typical (Global calcs)
 

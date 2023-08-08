@@ -9,7 +9,7 @@ from pycalcy import (
     Math,
     Typical,
     Physics,
-    Astrology,
+    Astronomy,
     Encrypt
 )
 
@@ -20,7 +20,7 @@ geometry = Geometry()
 math = Math()
 typical = Typical()
 physics = Physics()
-astrology = Astrology()
+astronomy = Astronomy()
 crypt = Encrypt()
 
 '''This is a simple example of how to use pycalcy to calculate the area of a circle'''
@@ -28,7 +28,7 @@ aoc = pycalcy(geometry.area_of_circle, 6)
 print(aoc)
 
 '''This is a simple example of how to check the orbit of a planet'''
-planet = pycalcy(astrology.orbital_period, 7, 6)
+planet = pycalcy(astronomy.orbital_period, 7, 6)
 print(planet)
 
 '''This is a simple example of how to crypt a message to binary'''

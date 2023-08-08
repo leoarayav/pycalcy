@@ -1,11 +1,11 @@
 """
-This module contains global calculations in astrology and most used of them
+This module contains global calculations in astronomy and most used of them
 """
 
 from typing import Union
 
-class Astrology:
-    """This class contains methods for astrology calculations"""
+class Astronomy:
+    """This class contains methods for astronomy calculations"""
 
     def light_year(self, distance: Union[int, float]) -> float:
         """
