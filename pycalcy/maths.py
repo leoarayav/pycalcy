@@ -60,14 +60,14 @@ class Math:
         """
         return capital * rate * time / 100
     
-    def compound_interest(self, capital: int | float, rate: int, time: int) -> Union[int, float]:
+    def compound_interest(self, capital: Union[int, float], rate: int, time: int) -> Union[int, float]:
         """
         This method calculates the compound interest
 
         Args:
             capital (int | float): The capital
-            rate (int | float): The rate
-            time (int | float): The time
+            rate (int): The rate
+            time (int): The time
 
         Returns:
             int | float: The compound interest
