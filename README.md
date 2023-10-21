@@ -1,3 +1,5 @@
+> Check it out the [Wiki](https://github.com/leoarayav/pycalcy/wiki)
+
 # pycalcy
 A smooth, lightweight and beautiful library for calculation and more
 > Nowadays this project is being written and rewritten.
