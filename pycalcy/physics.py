@@ -109,3 +109,17 @@ class Physics:
             Union[int, float]: Period
         """
         return 1 / frequency
+
+    def frequency(self, period: Union[int, float]) -> float | int:
+        """
+        Calculate frequency using period
+
+        Args:
+            period (Union[int, float]): Period of wave
+        
+        Returns:
+            Union[int, float]: Frequency
+        """
+        if period == 0:
+            return 0
+        return 1 / period | 0
