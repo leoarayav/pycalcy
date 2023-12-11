@@ -10,7 +10,7 @@ setup(
     url='https://www.github.com/leoarayav/pycalcy',
     license='MIT',
     packages=find_packages(),
-    keywords=['pycalcy', 'python', 'calculator', 'maths', 'physics', 'astrology', 'package'],
+    keywords=['pycalcy', 'python', 'calculator', 'maths', 'physics', 'astronomy', 'package'],
     classifiers=[
         'Development Status :: 3 - Alpha',
         'Intended Audience :: Developers',
